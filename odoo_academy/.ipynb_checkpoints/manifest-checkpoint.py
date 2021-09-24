@@ -23,10 +23,10 @@
     
     'data': [
         'views/academy_menuitems.xml',
-        'security/ir.model.access.csv',
         'security/academy_security.xml',
-         'views/course_views.xml',
-       
+        'security/ir.model.access.csv',
+        'views/course_views.xml',
+        'views/session_views.xml',
         
         
     ],
