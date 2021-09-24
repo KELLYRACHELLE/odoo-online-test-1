@@ -23,6 +23,7 @@
     
     'data': [
         'views/academy_menuitems.xml',
+        'security/ir.model.access.csv',
         'security/academy_security.xml',
        
         
