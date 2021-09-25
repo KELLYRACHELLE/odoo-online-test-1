@@ -19,7 +19,7 @@
     'category': 'Training',
     'version': '0.1',
     
-    'depends': ['base'],
+    'depends': ['sale'],
     
     'data': [
         'views/academy_menuitems.xml',
@@ -27,6 +27,7 @@
         'security/ir.model.access.csv',
         'views/course_views.xml',
         'views/session_views.xml',
+        'views/sale_views_inherit.xml',
         
         
     ],
