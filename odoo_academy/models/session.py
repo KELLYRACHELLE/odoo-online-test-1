@@ -18,7 +18,7 @@ class Session(models.Model):
     
     student_ids = fields.Many2many(comodel_name='res.partner', string='Students') 
     
-   start_date = field.Date(string='start Date',
+   start_date = fields.Date(string='start Date',
                           default=fields.Date.today)
 
     duration = fields.Integer(string='Session Days',
