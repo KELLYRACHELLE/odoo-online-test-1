@@ -28,6 +28,17 @@ class Session(models.Model):
                               inverse='_inverse_end_date',
                               store=True)
     
+    state = fields.selection(string='States',
+                             selection=[('droft','Draft'),
+                                        ('open','In Progress'),
+                                        ('done','Done'),
+                                        ('canceled','Canceled')],
+                            default='draft',
+                            reauired='True')
+    
+    total_price = fields.Float(string='Total Price',
+                              related='course_id.total_price')
+    
     @api.depends('start_date','duration')
     def _computer_end_date(self):
         for record in self:
